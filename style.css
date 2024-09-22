@@ -2,7 +2,7 @@ h1,
 h2,
 p,
 ul,
-button {
+button, blockquote {
   margin: 0;
   padding: 0;
 }
@@ -105,11 +105,19 @@ body {
 
 main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
+
+.cards-section, .quote-section, .cta-section {
+  flex: 1;
+  padding: 50px 50px;
+}
+
+/* Cards section */
 
 .cards-section {
   text-align: center;
-  padding: 60px 0 100px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,3 +154,36 @@ main {
   font-size: 18px;
   color: #1f2937
 }
+
+/* Quote */
+
+.quote-section {
+  background-color: #e5e7eb;
+  text-wrap: wrap;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  width: 30%;
+}
+
+.quote-text {
+  font-size: 32px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #1f2937;
+  text-align: start;
+  margin-bottom: 12px;
+}
+
+.quote-citation {
+  text-align: end;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Call to Action */
