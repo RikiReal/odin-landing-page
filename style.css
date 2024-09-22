@@ -1,4 +1,5 @@
 h1,
+h2,
 p,
 ul,
 button {
@@ -104,4 +105,44 @@ body {
 
 main {
   flex: 1;
+}
+
+.cards-section {
+  text-align: center;
+  padding: 60px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;;
+}
+
+.cards-section h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+.card-items {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  text-wrap: wrap;
+  width: 150px;
+}
+
+.card-image {
+  height: 150px;
+  border: #3882f6 4px solid;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.card-text {
+  font-size: 18px;
+  color: #1f2937
 }
